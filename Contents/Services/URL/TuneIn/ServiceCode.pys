@@ -155,7 +155,10 @@ class TuneInStation:
 
     @property
     def stream_url(self):
-        return self.broadcast['StreamUrl']
+        url = self.broadcast['StreamUrl']
+        if url.startswith('//'):
+            url = 'http:'+url;
+        return url
 
     def loadStreams(self):
         text = UrlRequest(self.stream_url)[2:-2]

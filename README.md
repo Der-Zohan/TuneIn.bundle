@@ -6,11 +6,10 @@ If the software submitted to this repository accesses or calls any software prov
 # Installation
 
 Follow the Manual Installation Instructions from [here](https://support.plex.tv/hc/en-us/articles/201187656-How-do-I-manually-install-a-channel-).
-Such username can be found if you open a web page of a tunein user, for [this](http://tunein.com/user/adamchuk2168/) example the username is `adamchuk2168`.
 
 # Listing of a user following stations
 
-'My Stations' sections shows radio stations following by a user. You need to specify username in preferences to use this feature.
+'My Stations' sections shows radio stations following by a user. You need to specify username in preferences to use this feature. Such username can be found if you open a web page of a tunein user, for [this](http://tunein.com/user/adamchuk2168/) example the username is `adamchuk2168`.
 
 # Information for developer
 * Requesting for a json with all station for a user: `curl 'http://tunein.com/profile/follows/?identifier=u159012873/follows/stations&type=&offset=20' -H 'x-requested-with: XMLHttpRequest'`
