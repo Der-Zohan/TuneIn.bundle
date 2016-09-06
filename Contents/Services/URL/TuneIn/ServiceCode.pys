@@ -161,6 +161,6 @@ class TuneInStation:
         return url
 
     def loadStreams(self):
-        text = UrlRequest(self.stream_url)[2:-2]
+        text = UrlRequest(self.stream_url)
         return JSON.ObjectFromString(text)['Streams']
 
